@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Server eintragen</title>
+</head>
+<body>
+    <h2>Neuen Server eintragen</h2>
+    <form method="post" action="eintragen.php">
+        Rechnername: <input type="text" name="rechnername" required><br>
+        IP-Adresse: <input type="text" name="ip_adresse" required><br>
+        Betriebssystem: <input type="text" name="betriebssystem" required><br>
+        Festplattenspeicher (GB): <input type="number" name="festplattenspeicher" required><br>
+        RAM (GB): <input type="number" name="ram" required><br>
+        Hauptdienst: <input type="text" name="hauptdienst" required><br>
+        <input type="submit" value="Speichern">
+    </form>
+
+    <h2>Aktuelle Serverliste</h2>
+    <iframe src="liste.php" width="100%" height="300"></iframe>
+
+    <br>
+    <form action="loeschen_liste.php" method="get">
+        <input type="submit" value="Server löschen">
+    </form>
+</body>
+</html>
+

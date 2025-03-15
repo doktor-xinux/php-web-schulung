@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Benutzer anlegen</title>
+</head>
+<body>
+    <h2>Neuen Benutzer anlegen</h2>
+    <form method="post" action="benutzer_anlegen.php">
+        Benutzername: <input type="text" name="benutzername" required><br>
+        Passwort: <input type="password" name="passwort" required><br>
+        Rolle:
+        <select name="rolle">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select><br>
+        <input type="submit" value="Benutzer anlegen">
+    </form>
+
+    <h2>Bestehende Benutzer</h2>
+    <iframe src="benutzer_liste.php" width="100%" height="300"></iframe>
+
+    <br>
+    <form action="benutzer_loeschen.php" method="get">
+        <input type="submit" value="Benutzer löschen">
+    </form>
+</body>
+</html>
+
